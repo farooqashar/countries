@@ -1,4 +1,21 @@
-# Getting Started with Create React App
+# Countries Site
+
+This is a simple site built using React and GraphQL to allow a user to view information about different countries and query on a country for information as well.
+
+# Cloning and Running Locally 
+
+```
+git clone https://github.com/farooqashar/loginmedia.git
+```
+
+# Starting Server
+
+```
+npm start
+```
+
+Locate to `http://localhost:3000/` to see the server running locally. 
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
