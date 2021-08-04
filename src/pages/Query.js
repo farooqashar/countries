@@ -26,7 +26,13 @@ const [handleSubmit, { data, loading, error} ] = useLazyQuery(query);
         {error && <h3 class="text-danger">Error: {error.message} </h3>}
 
         <div>
-         <Link to="/">Go Back</Link>
+
+         <h1>Query A Country</h1>
+         <p class="text-info">Query A Country By Entering A Relevant Country Code Below!</p>
+
+         <div>
+         <Link to="/"><button class="btn btn-primary">Go Back</button></Link>
+         </div>
 
             <input onChange={(event) => setCountryCode(event.target.value)} type="text" placeholder="Enter A Country Code Here"></input>
             <button onClick={() => {handleSubmit({variables: {code: countryCode.toUpperCase()}})}}>Query Country</button>
