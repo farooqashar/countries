@@ -50,7 +50,7 @@ const [handleSubmit, { data, loading, error} ] = useLazyQuery(query);
             </div>
 
             <div class="form-group">
-            <button class="btn btn-danger" onClick={() => {handleSubmit({variables: {code: countryCode.toUpperCase()}})}}>Query Country</button>
+            <button type="submit" class="btn btn-danger" onClick={() => {handleSubmit({variables: {code: countryCode.toUpperCase()}})}}>Query Country</button>
             </div>
         </div>
 
