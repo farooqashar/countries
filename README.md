@@ -5,7 +5,7 @@ This is a simple site built using React and GraphQL to allow a user to view info
 # Cloning and Running Locally 
 
 ```
-git clone https://github.com/farooqashar/loginmedia.git
+git clone https://github.com/farooqashar/countries.git
 ```
 
 # Starting Server
