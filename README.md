@@ -16,6 +16,14 @@ npm start
 
 Locate to `http://localhost:3000/` to see the server running locally. 
 
+**Viewing Information on All Countries**
+
+![Viewing Information on All Countries](https://raw.githubusercontent.com/farooqashar/countries/readme_images/public/all.png)
+
+**Querying Information of a Country**
+
+![Querying Information of a Country](https://raw.githubusercontent.com/farooqashar/countries/readme_images/public/one.png)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
