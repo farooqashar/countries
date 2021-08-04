@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/farooqashar/countriesstatic/css/main.d87cbb72.chunk.css",
+    "main.js": "/farooqashar/countriesstatic/js/main.d4aa2ce9.chunk.js",
+    "main.js.map": "/farooqashar/countriesstatic/js/main.d4aa2ce9.chunk.js.map",
+    "runtime-main.js": "/farooqashar/countriesstatic/js/runtime-main.3894bf5f.js",
+    "runtime-main.js.map": "/farooqashar/countriesstatic/js/runtime-main.3894bf5f.js.map",
+    "static/js/2.dac6d3cb.chunk.js": "/farooqashar/countriesstatic/js/2.dac6d3cb.chunk.js",
+    "static/js/2.dac6d3cb.chunk.js.map": "/farooqashar/countriesstatic/js/2.dac6d3cb.chunk.js.map",
+    "static/js/3.37a9a1e5.chunk.js": "/farooqashar/countriesstatic/js/3.37a9a1e5.chunk.js",
+    "static/js/3.37a9a1e5.chunk.js.map": "/farooqashar/countriesstatic/js/3.37a9a1e5.chunk.js.map",
+    "index.html": "/farooqashar/countriesindex.html",
+    "static/css/main.d87cbb72.chunk.css.map": "/farooqashar/countriesstatic/css/main.d87cbb72.chunk.css.map",
+    "static/js/2.dac6d3cb.chunk.js.LICENSE.txt": "/farooqashar/countriesstatic/js/2.dac6d3cb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3894bf5f.js",
+    "static/js/2.dac6d3cb.chunk.js",
+    "static/css/main.d87cbb72.chunk.css",
+    "static/js/main.d4aa2ce9.chunk.js"
+  ]
+}
