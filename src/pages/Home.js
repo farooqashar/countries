@@ -24,8 +24,13 @@ const { data, loading, error } = useQuery(query);
   return (
     <div className="Home">
          <h1>Countries</h1>
-         <Link to="/query">Query A Country</Link>
-
+         <p class="text-info">This site allows users to query a specific country for more information in addition to viewing mass information all at once.</p>
+         <br/>
+         <br/>
+         <Link to="/query"><button class="btn btn-primary">Query A Country</button></Link>
+         <br/>
+         <br/>
+         
         <div className="countries">
           {loading && <h3>Loading...</h3>}
           {error && <h3>Error: {error.message} </h3>}
@@ -41,6 +46,8 @@ const { data, loading, error } = useQuery(query);
 
                </CardContent>
                 </Card>
+                <br/>
+                <br/>
               </div>)
           })}
         </div>
