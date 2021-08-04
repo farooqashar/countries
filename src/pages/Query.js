@@ -49,8 +49,9 @@ const [handleSubmit, { data, loading, error} ] = useLazyQuery(query);
               onChange={(event) => setCountryCode(event.target.value)} type="text" placeholder="Enter A Country Code Here"></input>
             </div>
 
-
-            <button onClick={() => {handleSubmit({variables: {code: countryCode.toUpperCase()}})}}>Query Country</button>
+            <div class="form-group">
+            <button class="btn btn-danger" onClick={() => {handleSubmit({variables: {code: countryCode.toUpperCase()}})}}>Query Country</button>
+            </div>
         </div>
 
         <div className="results">
