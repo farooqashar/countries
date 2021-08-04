@@ -42,7 +42,7 @@ const { data, loading, error } = useQuery(query);
               <Card variant="outlined">
               <CardContent>
 
-              <h2>{each_country.name} {each_country.emoji}</h2>
+              <h2 class="text-danger">{each_country.name} {each_country.emoji}</h2>
               
                <h6>Capital: {each_country.capital}</h6>
 
