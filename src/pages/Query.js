@@ -10,6 +10,7 @@ query Country($code: ID!) {
         emoji
         code
         currency
+        phone
     }
 }
 `;
@@ -54,14 +55,16 @@ const [handleSubmit, { data, loading, error} ] = useLazyQuery(query);
             </div>
         </div>
 
-        <div className="results">
+        <div>
             {data && 
             (
             <>
-            <div><h1>{data.country.name} {data.country.emoji}</h1></div>
-            <div>Capital: <h1>{data.country.capital}</h1></div>
-            <div>Currency: <h1>{data.country.currency}</h1></div>
-            <div>Country Code: <h1>{data.country.code}</h1></div>
+            <h1>{data.country.name} {data.country.emoji}</h1>
+             <h4>Capital: {data.country.capital}</h4>
+             <h4>Currency: {data.country.currency}</h4>
+             <h4>Country Code: {data.country.code}</h4>
+             <h4>Phone Extension: {data.country.phone}</h4>
+
             </>
             )}
         </div>
