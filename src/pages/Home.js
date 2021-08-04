@@ -12,6 +12,8 @@ countries {
   capital
   emoji
   code
+  currency
+  phone
 }
 }
 `;
@@ -30,10 +32,10 @@ const { data, loading, error } = useQuery(query);
          <Link to="/query"><button class="btn btn-primary">Query A Country</button></Link>
          <br/>
          <br/>
-         
+
         <div className="countries">
-          {loading && <h3>Loading...</h3>}
-          {error && <h3>Error: {error.message} </h3>}
+          {loading && <h3 class="text-warning">Loading...</h3>}
+          {error && <h3 class="text-danger">Error: {error.message} </h3>}
           {data && data.countries.map((each_country, key) => {
               return (
               <div key={key}> 
@@ -42,7 +44,13 @@ const { data, loading, error } = useQuery(query);
 
               <h2>{each_country.name} {each_country.emoji}</h2>
               
-               <h4>{each_country.capital} | {each_country.code}</h4>
+               <h6>Capital: {each_country.capital}</h6>
+
+               <h6>Phone Extension: {each_country.phone} </h6>
+               
+               <h6>Country Code: {each_country.code}</h6>
+
+                <h6>Currency: {each_country.currency}</h6>
 
                </CardContent>
                 </Card>
