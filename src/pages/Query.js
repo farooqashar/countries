@@ -33,8 +33,23 @@ const [handleSubmit, { data, loading, error} ] = useLazyQuery(query);
          <div>
          <Link to="/"><button class="btn btn-primary">Go Back</button></Link>
          </div>
+            <br />
 
-            <input onChange={(event) => setCountryCode(event.target.value)} type="text" placeholder="Enter A Country Code Here"></input>
+            <div class="form-group">
+            <label className="form-label" htmlFor="code">
+            Country Code:
+                </label>        
+
+            <input 
+            id="code"
+            rows="1"
+              cols="47"
+              required
+              class="form-control" 
+              onChange={(event) => setCountryCode(event.target.value)} type="text" placeholder="Enter A Country Code Here"></input>
+            </div>
+
+
             <button onClick={() => {handleSubmit({variables: {code: countryCode.toUpperCase()}})}}>Query Country</button>
         </div>
 
