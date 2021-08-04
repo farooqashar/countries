@@ -22,6 +22,9 @@ const [handleSubmit, { data, loading, error} ] = useLazyQuery(query);
 
   return (
     <div className="query">
+        
+        {error && <h3 class="text-danger">Error: {error.message} </h3>}
+
         <div className="userinput">
          <Link to="/">Go Back</Link>
 

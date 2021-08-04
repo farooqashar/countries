@@ -24,7 +24,7 @@ function Home() {
 const { data, loading, error } = useQuery(query);
 
   return (
-    <div className="Home">
+    <div>
          <h1>Countries</h1>
          <p class="text-info">This site allows users to query a specific country for more information in addition to viewing mass information all at once.</p>
          <br/>
@@ -33,7 +33,7 @@ const { data, loading, error } = useQuery(query);
          <br/>
          <br/>
 
-        <div className="countries">
+        <div>
           {loading && <h3 class="text-warning">Loading...</h3>}
           {error && <h3 class="text-danger">Error: {error.message} </h3>}
           {data && data.countries.map((each_country, key) => {
