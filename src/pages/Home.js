@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 
 const query = gql`
 {
-    countries {
+countries {
   name
   capital
   emoji
+  code
 }
 }
 `;
@@ -29,7 +30,7 @@ const { data, loading, error } = useQuery(query);
               return (
               <div key={key}> 
               <h2>{each_country.name} {each_country.emoji}</h2>
-               <h4>{each_country.capital}  </h4>
+               <h4>{each_country.capital} | {each_country.code}</h4>
 
               </div>)
           })}
