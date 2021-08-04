@@ -21,11 +21,11 @@ const [handleSubmit, { data, loading, error} ] = useLazyQuery(query);
 
 
   return (
-    <div className="query">
+    <div>
         
         {error && <h3 class="text-danger">Error: {error.message} </h3>}
 
-        <div className="userinput">
+        <div>
          <Link to="/">Go Back</Link>
 
             <input onChange={(event) => setCountryCode(event.target.value)} type="text" placeholder="Enter A Country Code Here"></input>
@@ -36,10 +36,10 @@ const [handleSubmit, { data, loading, error} ] = useLazyQuery(query);
             {data && 
             (
             <>
-            <div className="country"><h1>{data.country.name} {data.country.emoji}</h1></div>
-            <div className="country">Capital: <h1>{data.country.capital}</h1></div>
-            <div className="country">Currency: <h1>{data.country.currency}</h1></div>
-            <div className="country">Country Code: <h1>{data.country.code}</h1></div>
+            <div><h1>{data.country.name} {data.country.emoji}</h1></div>
+            <div>Capital: <h1>{data.country.capital}</h1></div>
+            <div>Currency: <h1>{data.country.currency}</h1></div>
+            <div>Country Code: <h1>{data.country.code}</h1></div>
             </>
             )}
         </div>
