@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/farooqashar/countriesstatic/css/main.d87cbb72.chunk.css",
-    "main.js": "/farooqashar/countriesstatic/js/main.d4aa2ce9.chunk.js",
-    "main.js.map": "/farooqashar/countriesstatic/js/main.d4aa2ce9.chunk.js.map",
+    "main.js": "/farooqashar/countriesstatic/js/main.3735f923.chunk.js",
+    "main.js.map": "/farooqashar/countriesstatic/js/main.3735f923.chunk.js.map",
     "runtime-main.js": "/farooqashar/countriesstatic/js/runtime-main.3894bf5f.js",
     "runtime-main.js.map": "/farooqashar/countriesstatic/js/runtime-main.3894bf5f.js.map",
     "static/js/2.dac6d3cb.chunk.js": "/farooqashar/countriesstatic/js/2.dac6d3cb.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.3894bf5f.js",
     "static/js/2.dac6d3cb.chunk.js",
     "static/css/main.d87cbb72.chunk.css",
-    "static/js/main.d4aa2ce9.chunk.js"
+    "static/js/main.3735f923.chunk.js"
   ]
 }
