@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useLazyQuery, gql } from "@apollo/client";
+import { Link } from "react-router-dom";
 
 const query = gql`
 query Country($code: ID!) {
@@ -16,19 +17,28 @@ query Country($code: ID!) {
 function Query() {
 
 const [countryCode, setCountryCode] = useState("");
-const [handleSubmit, { data, loading, error} ] = useLazyQuery(query, {variables: {code: countryCode.toUpperCase()}});
+const [handleSubmit, { data, loading, error} ] = useLazyQuery(query);
 
 
   return (
     <div className="query">
         <div className="userinput">
+         <Link to="/">Go Back</Link>
 
             <input onChange={(event) => setCountryCode(event.target.value)} type="text" placeholder="Enter A Country Code Here"></input>
-            <button onClick={handleSubmit}>Query Country</button>
+            <button onClick={() => {handleSubmit({variables: {code: countryCode.toUpperCase()}})}}>Query Country</button>
         </div>
 
         <div className="results">
-            {data && <h1>{data.country.name}</h1>}
+            {data && 
+            (
+            <>
+            <div className="country"><h1>{data.country.name} {data.country.emoji}</h1></div>
+            <div className="country">Capital: <h1>{data.country.capital}</h1></div>
+            <div className="country">Currency: <h1>{data.country.currency}</h1></div>
+            <div className="country">Country Code: <h1>{data.country.code}</h1></div>
+            </>
+            )}
         </div>
     </div>
   );
