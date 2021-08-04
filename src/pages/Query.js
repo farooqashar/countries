@@ -59,11 +59,11 @@ const [handleSubmit, { data, loading, error} ] = useLazyQuery(query);
             {data && 
             (
             <>
-            <h1>{data.country.name} {data.country.emoji}</h1>
-             <h4>Capital: {data.country.capital}</h4>
-             <h4>Currency: {data.country.currency}</h4>
-             <h4>Country Code: {data.country.code}</h4>
-             <h4>Phone Extension: {data.country.phone}</h4>
+            <h2 class="eachl">{data.country.name} {data.country.emoji}</h2>
+             <h4 class="ssm">Capital: {data.country.capital}</h4>
+             <h4 class="ssm">Currency: {data.country.currency}</h4>
+             <h4 class="ssm">Country Code: {data.country.code}</h4>
+             <h4 class="ssm">Phone Extension: {data.country.phone}</h4>
 
             </>
             )}
